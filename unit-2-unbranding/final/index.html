@@ -8,17 +8,83 @@
 	-->
 	<title>Taco Bell Unbranding</title>
 	<style>
+		@font-face {
+			font-family: Montserrat;
+			src: url(assets/font/Montserrat-Bold.otf);
+			/*Free alternative to Gotham*/
+		}
+
 		body { 
-			background-color: #F;
-			font-family: Helvetica, Arial, sans-serif;
+			background-color: #FFFFFF;
+			font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 			font-weight: bold;
 		}
+
+		.menu {
+			display: flex;
+			align-items: center;
+			font-size: 25px;
+			word-spacing: 70px;
+			margin-bottom: 10px;
+		}
+		#logo {
+			padding-right: 140px;
+			width: 306px;
+			height: 65px;
+		}
+		#start {
+			padding-left: 140px;
+			width: 354px;
+			height: 65px;
+		}
+		hr {
+			height: 1px;
+			width: 100%;
+			background-color: black;
+
+		}
+
+		h1 {
+			text-align: center;
+			padding-top: 30px;
+			font-size: 55px;
+		}
+	
+
 </style>
 
 </head>
-
 <body>
-	<h1>Hello TACO BELL</h1>
+<div class="menu">
+	<img id="logo" src="assets/images/tacobell.png" alt="Taco Bell logo"/> 
+	Menu Rewards Delivery
+	<img id="start" src="assets/images/start.png" alt="Start Your Order"/>
+</div>
+
+<hr>
+
+	<h1>YUMMY GOODNESS</h1>
+
+		<!-- 
+
+	Tutorials
+
+	How to change the font to a downloaded font: https://www.w3schools.com/css/css3_fonts.asp
+
+	How to get the text in line with the image: https://www.tutorialrepublic.com/faq/how-to-vertically-align-text-next-to-an-image-using-css.php#:~:text=Answer:%20Use%20CSS%20vertical%2Dalign,before%20name%2C%20etc.).
+
+	How to get the text in line with the image with CSS and div: https://datawookie.dev/blog/2022/09/vertically-align-image-text/#:~:text=Single%20Line%20of%20Text,/div%3E
+
+	How to get the text in line with the image: https://stackoverflow.com/questions/61940802/how-do-i-set-two-pictures-on-the-same-line-using-html-and-css
+
+	How to get the text spaced out from the images: https://www.emailonacid.com/blog/article/email-development/how-to-fix-image-padding-and-spacing-in-html-emails/
+
+	Word spacing: https://www.w3schools.com/css/css_text_spacing.asp
+
+	Line <hr> tag: https://www.w3schools.com/tags/tag_hr.asp
+
+	Line margin: https://stackoverflow.com/questions/6304621/css-can-i-use-negative-padding-so-that-together-with-a-border-they-appear-outsi
+	-->
 
 </body>
 </html>
