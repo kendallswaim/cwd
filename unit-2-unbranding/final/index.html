@@ -7,7 +7,7 @@
 
 	This is my unbranding for Taco Bell. It is a critique on corporate advertising and how what you see on the website is not actually what you get when you order it. My page is supposed to look like the real taco bell website, currently it says "crispy, golden goodness" with images and captions for nacho fries. I have changed that to tacos and nachos. 
 
-	When you hover over the images it switches to an image of what you would actually recieve when you order a taco/nacho. Ideally, both images would change but for now I can only get one to work. 
+	When you hover over the images it switches to an image of what you would actually recieve when you order a taco/nacho.
 
 	-->
 	<title>Taco Bell Unbranding</title>
@@ -99,10 +99,11 @@
 
 	<h1>YUMMY GOODNESS</h1>
 
-	<div>
-		<img onmouseover="setNewImage()" onmouseout="setOldImage()" id="taco" src="assets/images/taco.jpg" alt="Taco Bell Crunchy Taco"/>
-		<img img onmouseover="setNewImage()" onmouseout="setOldImage()"id="nachos" src="assets/images/nachos.jpg" alt="Taco Bell Nachos BellGrande"/>
-	</div>
+	
+	<img onmouseover="setNewImage()" onmouseout="setOldImage()" id="taco" src="assets/images/taco.jpg" alt="Taco Bell Crunchy Taco"/>
+	
+	<img img onmouseover="setNewImage2()" onmouseout="setOldImage2()"id="nachos" src="assets/images/nachos.jpg" alt="Taco Bell Nachos BellGrande"/>
+
 
 	<div class="flex-container">
 		<p id="crunchy"> CRUNCHY TACO </p> 
@@ -122,11 +123,11 @@ document.getElementById("taco").src="assets/images/badtaco.jpg";
 		{
 document.getElementById("taco").src="assets/images/taco.jpg";
 		}
-		function setNewImage()
+		function setNewImage2()
 		{
 document.getElementById("nachos").src="assets/images/badnachos.jpg";
 		}
-		function setOldImage()
+		function setOldImage2()
 		{
 document.getElementById("nachos").src="assets/images/nachos.jpg";
 		}
