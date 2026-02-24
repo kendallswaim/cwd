@@ -11,6 +11,8 @@
 		@font-face {
 			font-family: Montserrat;
 			src: url(assets/font/Montserrat-Bold.otf);
+			/*font-family: Montserrat;
+			src: url(assets/font/Montserrat-Regular.otf)*/
 			/*Free alternative to Gotham*/
 		}
 
@@ -48,7 +50,36 @@
 			text-align: center;
 			padding-top: 30px;
 			font-size: 55px;
+			font-weight: bold;
 		}
+		#taco {
+			padding-left: 300px;
+			width: 360px;
+			height: 354px;
+		}
+		#nachos {
+			padding-left: 100px;
+			width: 360px;
+			height: 354px;
+		}
+		.flex-container {
+			display: flex;
+			gap: 215px;
+		width: 100%;
+		font-size: 25px;
+		padding-left: 350px;
+		}
+		.box {
+  		overflow-wrap: break-word;
+  		text-wrap: balance;
+  		display:flex;
+  		gap: 200px;
+  		padding-left: 350px;
+  		padding-right: 150px;
+  		width: 800px;
+  		height: auto;
+		}
+
 	
 
 </style>
@@ -64,6 +95,22 @@
 <hr>
 
 	<h1>YUMMY GOODNESS</h1>
+
+	<div>
+		<img id="taco" src="assets/images/taco.jpg" alt="Taco Bell Crunchy Taco"/>
+		<img id="nachos" src="assets/images/nachos.jpg" alt="Taco Bell Nachos BellGrande"/>
+	</div>
+
+	<div class="flex-container">
+		<p id="crunchy"> CRUNCHY TACO </p> 
+		<p id="nachosbell"> NACHOS BELL GRANDE </p>
+	</div>
+
+	<div class="box"> 
+<p>A crunchy taco shell filled with seasoned beef, lettuce, and shredded cheddar cheese.</p>
+<p>Warm-and-crispy tortilla chips with seasoned beef, refried beans, diced tomatoes, warm Nacho Cheese sauce, and reduced-fat sour cream.</p>
+	</div>
+	
 
 		<!-- 
 
@@ -84,6 +131,16 @@
 	Line <hr> tag: https://www.w3schools.com/tags/tag_hr.asp
 
 	Line margin: https://stackoverflow.com/questions/6304621/css-can-i-use-negative-padding-so-that-together-with-a-border-they-appear-outsi
+
+	Photo captions gap: https://stackoverflow.com/questions/50291993/how-to-get-two-pieces-of-text-to-sit-next-to-each-other-and-be-responsive-to-scr
+	
+	Text wrapping: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Text/Wrapping_breaking_text
+
+	Images:
+
+	badtaco: https://www.reddit.com/r/tacobell/comments/gte7xc/this_is_what_i_received_yesterday_for_my_12pk/
+
+
 	-->
 
 </body>
