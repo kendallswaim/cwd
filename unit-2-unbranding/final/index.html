@@ -3,16 +3,19 @@
 <head>
 
 	<!--
-	About this page:
+	About this page: 
+
+	This is my unbranding for Taco Bell. It is a critique on corporate advertising and how what you see on the website is not actually what you get when you order it. My page is supposed to look like the real taco bell website, currently it says "crispy, golden goodness" with images and captions for nacho fries. I have changed that to tacos and nachos. 
+
+	When you hover over the images it switches to an image of what you would actually recieve when you order a taco/nacho. Ideally, both images would change but for now I can only get one to work. 
 
 	-->
 	<title>Taco Bell Unbranding</title>
+	
 	<style>
 		@font-face {
 			font-family: Montserrat;
 			src: url(assets/font/Montserrat-Bold.otf);
-			/*font-family: Montserrat;
-			src: url(assets/font/Montserrat-Regular.otf)*/
 			/*Free alternative to Gotham*/
 		}
 
@@ -43,7 +46,6 @@
 			height: 1px;
 			width: 100%;
 			background-color: black;
-
 		}
 
 		h1 {
@@ -64,20 +66,21 @@
 		}
 		.flex-container {
 			display: flex;
-			gap: 215px;
+			gap: 145px;
 		width: 100%;
-		font-size: 25px;
+		font-size: 30px;
 		padding-left: 350px;
 		}
 		.box {
   		overflow-wrap: break-word;
   		text-wrap: balance;
   		display:flex;
-  		gap: 200px;
-  		padding-left: 350px;
+  		gap: 50px;
+  		padding-left: 300px;
   		padding-right: 150px;
-  		width: 800px;
+  		width: 1000px;
   		height: auto;
+  		font-size: 25px;
 		}
 
 	
@@ -97,8 +100,8 @@
 	<h1>YUMMY GOODNESS</h1>
 
 	<div>
-		<img id="taco" src="assets/images/taco.jpg" alt="Taco Bell Crunchy Taco"/>
-		<img id="nachos" src="assets/images/nachos.jpg" alt="Taco Bell Nachos BellGrande"/>
+		<img onmouseover="setNewImage()" onmouseout="setOldImage()" id="taco" src="assets/images/taco.jpg" alt="Taco Bell Crunchy Taco"/>
+		<img img onmouseover="setNewImage()" onmouseout="setOldImage()"id="nachos" src="assets/images/nachos.jpg" alt="Taco Bell Nachos BellGrande"/>
 	</div>
 
 	<div class="flex-container">
@@ -110,7 +113,25 @@
 <p>A crunchy taco shell filled with seasoned beef, lettuce, and shredded cheddar cheese.</p>
 <p>Warm-and-crispy tortilla chips with seasoned beef, refried beans, diced tomatoes, warm Nacho Cheese sauce, and reduced-fat sour cream.</p>
 	</div>
-	
+	<script type="text/javascript">
+		function setNewImage()
+		{
+document.getElementById("taco").src="assets/images/badtaco.jpg";
+		}
+		function setOldImage()
+		{
+document.getElementById("taco").src="assets/images/taco.jpg";
+		}
+		function setNewImage()
+		{
+document.getElementById("nachos").src="assets/images/badnachos.jpg";
+		}
+		function setOldImage()
+		{
+document.getElementById("nachos").src="assets/images/nachos.jpg";
+		}
+
+	</script>
 
 		<!-- 
 
@@ -136,9 +157,15 @@
 	
 	Text wrapping: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Text/Wrapping_breaking_text
 
+	Mouseover/Mouseout: https://www.youtube.com/watch?v=AiiXLmqhndU
+
 	Images:
 
 	badtaco: https://www.reddit.com/r/tacobell/comments/gte7xc/this_is_what_i_received_yesterday_for_my_12pk/
+
+	badnachos: https://www.theimpulsivebuy.com/wordpress/2007/04/08/taco-bell-zesty-nachos/
+
+	Logo and Start Order: https://www.tacobell.com
 
 
 	-->
