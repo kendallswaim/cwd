@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body {
+	background-color: #12219A;
+}
+.flex-container {
+  	display: flex;
+	gap: 10px;
+	width: 100%;
+
+}
+ #square {
+    margin-top:20px;
+    margin-left:12px;
+    width: 100px;
+    height: 100px;
+    background: #70CCDB;
+  }
+  #circle {
+  height: 100px;
+  width: 100px;
+  background-color: #DB5EAD;
+  border-radius: 100%;
+  margin-top: 20px;
+  }
+	#square2 {
+   margin-top:20px;
+   width: 100px;
+   height: 100px;
+   background: #70CCDB;
+}
+   #circle2 {
+  height: 100px;
+  width: 100px;
+  background-color: #DB5EAD;
+  border-radius: 100%;
+  margin-top: 20px;
+margin-left: 965px;
+  }
+
+.flex-container2 {
+  	display: flex;
+	gap: 10px;
+	width: 100%;
+
+   #square3 {
+    margin-top:570px;
+    width: 100px;
+    height: 100px;
+    background: #70CCDB;
+  }
+  #circle3 {
+  	margin-left:12px;
+  height: 100px;
+  width: 100px;
+  background-color: #DB5EAD;
+  border-radius: 100%;
+  margin-top: 570px;
+  }
+	#square4 {
+   margin-top:570px;
+   width: 100px;
+   height: 100px;
+   background: #70CCDB;
+   margin-left: 965px;
+}
+   #circle4 {
+  height: 100px;
+  width: 100px;
+  background-color: #DB5EAD;
+  border-radius: 100%;
+  margin-top: 570px;
+  }
+
+</style>
+
+</head>
+
+<body>
+<div class="flex-container">
+	<div id="square"></div>
+	<div id="circle"></div>
+	<div id="circle2"></div>
+	<div id="square2"></div>
+	</div>
+<div class="flex-container2">
+	<div id="circle3"></div>
+	<div id="square3"></div>
+	<div id="square4"></div>
+	<div id="circle4"></div>
+
+	</div>
+</body>
+</html>
