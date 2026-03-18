@@ -15,37 +15,107 @@
   	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
   	<style> 
+
+      @font-face {
+  font-family: new-rocker;
+  src: url(assets/fonts/new-rocker.regular.ttf);
+}
+  @font-face {
+    font-family: newsreader;
+    src: url(assets/fonts/newsreader.ttf);
+  }
   		h1 {
   			text-align: center; 
+        font-size: 70px;
+        font-family: "new-rocker", blackletter;
+        padding-top: 20px;
+      }
+      h2 {
+        font-size: 50px;
+        text-align: left;
+        font-family: "newsreader", serif;
+        font-weight: bold;
+      }
+      h3 {
+        font-size: 30px;
+        font-family: "newsreader", serif;
+        font-weight: bold;
       }
 
-      .col-3 {
-        background-color: pink;
+      #snow {
+        width: 264px;
+        height: 352px;
       }
-  	
+      #nap {
+        width:264px;
+        height: 353px;
+        margin-top: 150px;
+      }
+     p {
+        font-size: 35px;
+        text-align: left;
+        margin-bottom: 100px;
+        font-family: "newsreader", serif;
+      }
+      p2 {
+        font-size: 25px;
+        text-align: left;
+        font-family: "newsreader", serif;
+      }
+      p3 {
+        font-size: 15px;
+        color: darkslategray;
+      font-family: "newsreader", serif;
+      }
+      #heading {
+        background-color: lightpink;
+      }
 
   	</style>
 </head>
 <body>
-
+<div id="heading">
 	<h1>The Maci Cat Post</h1>
-  <button type="button" class="btn btn-outline-dark">Subscribe</button>
+  <!-- <button type="button" class="btn btn-outline-dark">Subscribe Today</button> -->
   <hr>
+</div>
 
 	<div class="container text-center">
   <div class="row">
-    <div class="col-9 first">
+    <div class="col-6 first" div id="text">
       <h2> Maci Enjoys a Snowday </h2>
       <p> As temperatures continue to drop and the snow begins to fall, Maci Cat has enjoyed looking out of the window. She is believed to be imagining her life as a snow cat. Sources say she has enough body fat to keep her warm. </p>
+      <!-- <img id="snow" img src="assets/images/snow.jpeg" class="rounded float-right" alt="black cat stares out of a window looking at snow"> -->
+      <hr>
+      <h2> Breaking News: Maci Takes a Nap </h2>
+      <p> Earlier this afternoon Maci Cat was spotted in her home in Virginia. She appeared to be sleeping. Why is she sleeping at 1pm? Was she up playing with her toys? We may never know.
+
+      Updated: An anonymous source has told us Maci Cat was up late last night being bad. </p>
+      <!-- <img id="nap" img src="assets/images/nap.jpeg" class="rounded float-right" alt="black cat stares out of a window looking at snow"> -->
     </div>
     <div class="col-3 second">
-      Column
+      <img id="snow" img src="assets/images/snow.jpeg" class="rounded float-right" alt="black cat stares out of a window looking at snow">
+      <p3> Image by Kendall Swaim</p3>
+       <img id="nap" img src="assets/images/nap.jpeg" class="rounded float-right" alt="black cat is sleeping on a pillow">
+       <p3> Image by Kendall Swaim</p3>
+
     </div>
-    <!-- <div class="col third">
-      Column
-    </div> -->
+   <div class="col-3 third">
+      <h3> Most Read</h3>
+      <p2> How often should cats be fed? Experts say 3 times a day.<p2>
+        <hr>
+      <p2> Chewy releases new cat tree. </p2>
+      <hr>
+      <p2> Survey says The Lion King is rated as the top movie for cats.</p2>
+      <hr>
+      <p2> Breaking news: It is raining cats and dogs. </p2>
+      <hr> Should catnip be illegal? 2 States pass legislation regarding catnip. </p2>
+    </div> 
   </div>
 </div>
+<!-- how to change fonts: https://www.w3schools.com/css/css3_fonts.asp
+
+-->
 
 </body>
 </html>
