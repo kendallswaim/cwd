@@ -45,26 +45,28 @@
       }
 
       #snow {
-        width: 264px;
-        height: 352px;
+       /* width: 264px;
+        height: 352px;*/
+        /*width: 90%;*/
+        margin-top: 15px;
       }
       #nap {
-        width:264px;
-        height: 353px;
-        margin-top: 150px;
+       /* width:264px;
+        height: 353px;*/
+        /*width: 90%;*/
+        margin-top: 50px;
       }
-     p {
+     #news {
         font-size: 35px;
         text-align: left;
-        margin-bottom: 100px;
         font-family: "newsreader", serif;
       }
-      p2 {
+      #mostread {
         font-size: 25px;
         text-align: left;
         font-family: "newsreader", serif;
       }
-      p3 {
+      #caption {
         font-size: 15px;
         color: darkslategray;
       font-family: "newsreader", serif;
@@ -85,8 +87,9 @@
 
 	<div class="container text-center">
   <div class="row">
-    <div class="col-6 first" div id="text">
+    <div class="col-6 col-lg-6 col-md-4 col-sm-2 first">
       <h2> Maci Enjoys a Snowday </h2>
+      <div id="news">
       <p> As temperatures continue to drop and the snow begins to fall, Maci Cat has enjoyed looking out of the window. She is believed to be imagining her life as a snow cat. Sources say she has enough body fat to keep her warm. </p>
       <hr>
       <h2> Breaking News: Maci Takes a Nap </h2>
@@ -94,24 +97,29 @@
 
       Updated: An anonymous source has told us Maci Cat was up late last night being bad. </p>
     </div>
-    <div class="col-3 second">
-      <img id="snow" img src="assets/images/snow.jpeg" class="rounded float-right" alt="black cat stares out of a window looking at snow">
-      <p3> Image by Kendall Swaim</p3>
-       <img id="nap" img src="assets/images/nap.jpeg" class="rounded float-right" alt="black cat is sleeping on a pillow">
-       <p3> Image by Kendall Swaim</p3>
-
     </div>
-   <div class="col-3 third">
+
+    <div class="col-3 col-lg-3 col-md-2 col-sm-2 second">
+      <div id="caption">
+      <img id="snow" class="img-fluid" img src="assets/images/snow.jpeg" class="rounded float-right" alt="black cat stares out of a window looking at snow">
+      <p> Image by Kendall Swaim</p>
+       <img id="nap" class="img-fluid" img src="assets/images/nap.jpeg" class="rounded float-right" alt="black cat is sleeping on a pillow">
+       <p> Image by Kendall Swaim</p>
+     </div>
+    </div>
+
+   <div class="col-3 col-lg-3 third">
       <h3> Most Read</h3>
-      <p2> How often should cats be fed? Experts say 3 times a day.<p2>
+      <div id="mostread">
+      <p> How often should cats be fed? Experts say 3 times a day.</p>
         <hr>
-      <p2> Chewy releases new cat tree. </p2>
+      <p> Chewy releases new cat tree. </p>
       <hr>
-      <p2> Survey says The Lion King is rated as the top movie for cats.</p2>
+      <p> Survey says The Lion King is rated as the top movie for cats.</p>
       <hr>
-      <p2> Breaking news: It is raining cats and dogs. </p2>
-      <hr> Should catnip be illegal? 2 States pass legislation regarding catnip. </p2>
-    </div> 
+      <p> Breaking news: It is raining cats and dogs. </p>
+      <hr> 
+      <p> Should catnip be illegal? 2 States pass legislation regarding catnip. </p>
   </div>
 </div>
 <!-- 
