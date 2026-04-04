@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<!-- 
+	About this page: 
+
+	The layout of my page was inspired by the Washington Post. The page is a news website about my cat Maci and other cat related things. There are blurbs about what Maci has been up to recently accompanied by images of her. In the right column I have made up headlines from some of the Maci Cat Post's most popular articles. 
+
+
+	-->
+  <style>
+
+  	body {
+  		background-color: #e8f4ea;
+  		font-family: "Times New Roman", Times, serif;
+  	}
+#heading {
+	padding-top: 20px;
+	font-size: 25px;
+	text-align: center;
+	h2 {
+		text align:center;
+		font-size: 25px;
+	}
+}
+h3 {
+	font-size: 25px;
+	text-align: center;
+}
+hr {
+			height: 2px;
+			width: 100%;
+			background-color: black;
+		}
+#sus {
+	text-align: left;
+	background-color: #b8d8be;
+	height: 700px;
+}
+#tasks {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#time {
+	font-weight: bold;
+	color: darkblue;
+	font-size: 20px;
+}
+#taskdes {
+	font-weight: bold;
+	font-size: 20px;
+}
+#notes {
+	font-size: 17px;
+}
+
+
+
+
+  </style>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<div id="heading">
+<h1> Usability Test Report </h1>
+<h2> For the nordstrom.com Usability Review Team </h2>
+<hr>
+</div>
+
+<div class="container text-center">
+  <div class="row">
+    <div class="col-4 first" div id="notes">
+<p id= "tasks" >Task 1:</p>
+<p id="taskdes">Find a pair of shoes that is on sale for a first date.</p>
+<p id="notes">Notes: The user used the search bar to search "formal shoes". The user scrolled until they found a pair of shoes they liked, then added a size 6 to the cart.</p>
+<img id="t1" class="img-fluid" img src="assets/images/t1.png" class="rounded float-right" alt="screenshot of user searching for formal shoes">
+<p id="time"> Time: 40.96 seconds </p>
+<hr>
+
+<p id= "tasks"> Task 3:</p>
+<p id="taskdes"> Find the highest-priced wall art for your new house.</p>
+<p id="notes">Notes: The user used the search bar to search "wall art". The user did not sort by price. The user scrolled through the selection and could not find the highest price wall art. </p>
+<img id="t3" class="img-fluid" img src="assets/images/t3.png" class="rounded float-right" alt="screenshot of user searching for wall art">
+<p id="time">Time: 52.23 seconds</p>
+<hr>
+
+<p id= "tasks">Task 5:</p>
+<p id="taskdes">Book an in-store styling appointment for women at Tysons Corner.</p>
+<p id="notes">Notes: The user started by verifying the store's location in the top right corner. The user scrolled through the page until the footer. The user searched the footer and did not find styling appointment. The user scrolled to the top of the page and clicked around a few of the headers. The user then found the styling appointment page. They chose a fashion expert styling appointment. </p>
+<img id="t4" class="img-fluid" img src="assets/images/t4.png" class="rounded float-right" alt="screenshot of user searching the footer">
+<p id="time">Time: 2.20.52 seconds</p>
+</div>
+
+    <div class="col-4 second" div id="notes2">
+<p id= "tasks">Task 2:</p>
+<p id="taskdes">Find a gift item under 100 dollars for a friend.</p>
+<p id="notes">Notes: The user used the search bar to search "plush". The user scrolled until they found a dragon plush. The user added the plush to cart.</p>
+<img id="t2" class="img-fluid" img src="assets/images/t2.png" class="rounded float-right" alt="screenshot of the user searching for plush">
+<p id="time"> Time: 24.57 seconds</p>
+<hr>
+
+<p id= "tasks">Task 4:</p>
+<p id="taskdes"> Find apparel appropriate for a Wedding.</p>
+<p id="notes">Notes: The user used the search bar to search "formal dress". The user scrolled until they found a dress they liked. Then they picked a size 4 and added to the cart. </p>
+<img id="t4" class="img-fluid" img src="assets/images/t4.png" class="rounded float-right" alt="screenshot of the user searching for formal dress">
+<p id="time"> Time: 45.12 seconds</p>
+<hr>
+<p id= "tasks">Overall Notes:</p>
+<p id="notes"> 1. The user frequently used the search bar to directly search what they needed.</p>
+<p id="notes">2. The user could not find the highest priced wall art because they did not utelize the sort and filter sections.</p>
+<p id="notes">3. The user had trouble finding the styling appointments because it could not be found through using the search bar.</p>
+<p id="notes">4. The user added their items to the cart and then removed them from the cart when the test was finished.</p>
+</div>
+
+
+    <div class="col-4 third" div id="sus">
+    	<h3> SUS Score Calculation</h3>
+<form action="#" id=myForm>
+	<input type="number" class="form-label" value="4" name="q1" id="q1" min="1" max="5" required>
+	<label for="q1" class="form-label">I think that I would like to use this system frequently.</label>
+	<input type="number" id="q2"class="form-label" value="1" name="q2" min="1" max="5" required>
+	<label for="q2" class="form-label">I found the system unnecessarily complex.</label>
+	<input type="number" class="form-label" value="5" name="q3" id="q3" min="1" max="5" required>
+	<label for="q3" class="form-label">I thought the system was easy to use.</label>
+	<input type="number" class="form-label" value="2" name="q4" id="q4" min="1" max="5" required>
+	<label for="q4" class="form-label">I think that I would need the support of a technical person to be able to use this system.</label>
+	<input type="number" class="form-label" value="4" name="q5" id="q5" min="1" max="5" required>
+	<label for="q5" class="form-label">I found the various functions in this system were well integrated.</label>
+	<input type="number" class="form-label" value="1" name="q6" id="q6" min="1" max="5" required>
+    <label for="q6" class="form-label">I thought there was too much inconsistency in this system.</label>
+    <input type="number" class="form-label" value="5" name="q7" id="q7" min="1" max="5" required>
+    <label for="q7" class="form-label">I would imagine that most people would learn to use this system very quickly.</label>
+     <input type="number" class="form-label" value="1" name="q8" id="q8" min="1" max="5" required>
+     <label for="q8" class="form-label">I found the system very cumbersome to use.</label>
+     <input type="number" class="form-label" value="4" name="q9" id="q9" min="1" max="5" required>
+     <label for="q9" class="form-label">I felt very confident using the system.</label>
+     <input type="number" class="form-label" value="2" name="q10" id="q10" min="1" max="5" required>
+     <label for="q10" class="form-label">I needed to learn a lot of things before I could get going with this system.</label>
+	<button type="submit" class="btn btn-outline-dark">Calculate Score</button>
+	<input type="number" step="any" class="form-label" id="answer">
+
+</form>
+
+</div>
+
+<script src="../assets/main.js"></script>
+<!-- 
+Process:
+
+Most of what I used came from previous projects.
+
+I used the textbook and their reccomended website https://criticalwebdesign.github.io/book/05-usability/5-3/ for the Javascript sus calculator.
+
+Bootsrtap button: https://getbootstrap.com/docs/4.0/components/buttons/.
+
+
+-->
+</body>
+</html>
